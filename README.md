@@ -4,9 +4,6 @@ This is the repository for my personal website, where I showcase my work and sha
 ## Getting Started
 To run the website locally on your machine, you'll need to have a browser installed
 
-## Clone the repository to your local machine
-Navigate to the project directory
-
 ## Contributing
 If you'd like to contribute to my website, feel free to submit a pull request with your changes. I welcome all contributions that align with the purpose and tone of my website.
 
