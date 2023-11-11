@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portfolio Archive</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            * {
+                padding: 10px 10px 10px 20px;
+            }
+            li {
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 20px;
+                margin-bottom: 10px;
+                background-color: #f7e8c6;
+                border-radius: 10px;
+                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+                list-style-type: none;
+                transition: all 0.15s ease-in-out;
+            }
+            li:hover {
+                color: #f7e8c6;
+                background-color: #333;
+                border-radius: 10px;
+                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+            }
+            a {
+                text-decoration: none;
+                color: #333;
+            }
+            a:hover {
+                color: #f7e8c6;
+            }
+            body.dark-mode {
+                background-color: #333;
+                color: #f7e8c6;
+            }
+            body.dark-mode li {
+                background-color: #555;
+                color: #f7e8c6;
+            }
+            body.dark-mode li:hover {
+                background-color: #f7e8c6;
+                color: #333;
+            }
+            body.dark-mode a {
+                color: #f7e8c6;
+            }
+            body.dark-mode a:hover {
+                color: #333;
+            }
+            .theme-switch {
+                position: absolute;
+                bottom: 20px;
+                right: 40px;
+                background-color: #f7e8c6;
+                border-radius: 100px;
+                width: 32px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+                animation: moveButton 0.5s ease-in-out;
+            }
+            .theme-switch:hover {
+                background-color: #333;
+            }
+            .theme-switch img {
+                width: 30px;
+                height: 30px;
+                padding-left: 2px;
+            }
+            @keyframes moveButton {
+                0% {
+                    transform: translateX(0);
+                }
+                50% {
+                    transform: translateX(5px);
+                }
+                100% {
+                    transform: translateX(0);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <h1 style="font-family: 'Montserrat', sans-serif;">Portfolio Archive</h1>
+            <p>Salut, compadre! Zibbly zubble zorkyblip bloople boopity bop 👽</p>
+            <ul>
+                <li><a href="1/index.html">First Portfolio</a></li>
+                <li><a href="2/index.html">Second Portfolio</a></li>
+                <li><a href="3/index.html">Third Portfolio</a></li>
+                <br>
+                <li><a href="https://arpy8.github.io/">Current Portfolio</a></li>
+            </ul>
+        </center>
+        <div class="theme-switch" onclick="toggleDarkMode()">
+            <img src="https://img.icons8.com/ios/50/000000/sun.png" class="sun-icon" />
+            <img src="https://img.icons8.com/ios/50/000000/moon.png" class="moon-icon" style="display: none;" />
+        </div>
+        <script>
+            function toggleDarkMode() {
+                document.body.classList.toggle("dark-mode");
+                const sunIcon = document.querySelector(".sun-icon");
+                const moonIcon = document.querySelector(".moon-icon");
+                if (document.body.classList.contains("dark-mode")) {
+                    sunIcon.style.display = "none";
+                    moonIcon.style.display = "block";
+                } else {
+                    sunIcon.style.display = "block";
+                    moonIcon.style.display = "none";
+                }
+            }
+        </script>
+    </body>
+</html>
