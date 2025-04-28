@@ -4,6 +4,8 @@
       <li><a href="https://arpy8.github.io/portfolios/1/index.html">First Portfolio</a></li>
       <li><a href=https://arpy8.github.io/portfolios/2/index.html">Second Portfolio</a></li>
       <li><a href="https://arpy8.github.io/portfolios/3/index.html">Third Portfolio</a></li>
+      <li><a href="https://arpy8.github.io/portfolios/4/index.html">Third Portfolio</a></li>
+      <li><a href="https://arpy8.github.io/portfolios/5/index.html">Third Portfolio</a></li>
       <br>
-      <li><a href="https://arpy8.github.io/">Current Portfolio</a></li>
+      <li><a href="https://arpy8.com/">Current Portfolio</a></li>
   </ul>
